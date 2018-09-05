@@ -5,4 +5,5 @@ for i in *.wmv;
   echo $name;
   ffmpeg -i "$i" "${name}.mp4";
 done
+notify-send -u normal -t 5000 "Batch Conversion Complete"
 ```
